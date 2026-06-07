@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Либерал-Народная партия РФ — Главная</title>
+<meta name="description" content="Либерал-Народная партия Российской Федерации — парламентская партия, отстаивающая права граждан и здравый смысл в законотворчестве. Учебный проект.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .hero{ position:relative; padding:84px 0 56px; }
+  .hero-grid{ display:grid; grid-template-columns:1.05fr .95fr;
+    gap:54px; align-items:center; }
+  .hero .h1 .small{ display:block; font-size:.42em; letter-spacing:.06em;
+    color:var(--gold); font-weight:600; margin-top:10px; }
+  .hero .lede{ margin:26px 0 32px; }
+  .hero .cta{ display:flex; gap:14px; flex-wrap:wrap; }
+  .emblem{ position:relative; display:grid; place-items:center; }
+  .emblem::before{ content:""; position:absolute; width:115%; height:115%;
+    background:radial-gradient(circle, rgba(233,186,49,.22), transparent 62%);
+    filter:blur(8px); }
+  .emblem img{ position:relative; width:min(420px,92%);
+    filter:drop-shadow(0 18px 50px rgba(0,0,0,.55)); }
+  .motto{ text-align:center; font-family:var(--serif); font-weight:600;
+    font-size:clamp(22px,3vw,32px); color:var(--ink-90); max-width:18ch;
+    margin:0 auto; }
+  .motto b{ color:var(--gold); font-weight:700; }
+  .two{ display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:start; }
+  .principles{ list-style:none; }
+  .principles li{ display:flex; gap:14px; padding:16px 0;
+    border-top:1px solid var(--line-soft); }
+  .principles li:first-child{ border-top:0; }
+  .principles .ic{ font-family:var(--serif); font-weight:700; color:var(--gold);
+    font-size:20px; min-width:30px; }
+  .principles h4{ font-family:var(--serif); font-size:19px; color:var(--white);
+    margin-bottom:3px; font-weight:600; }
+  .principles p{ font-size:14px; color:var(--ink-65); }
+  .ctastrip{ background:linear-gradient(120deg,var(--navy-3),var(--navy-1));
+    border:1px solid var(--line); border-radius:10px; padding:46px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:30px; flex-wrap:wrap; }
+  @media (max-width:680px){
+    .hero-grid,.two{ grid-template-columns:1fr; }
+    .emblem{ order:-1; }
+    .emblem img{ width:min(280px,70%); }
+  }
+</style>
+</head>
+<body>
+<div id="site-head"></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker reveal d1">Парламентская партия · с 2019 года</div>
+        <h1 class="h1 reveal d2">Либерал-Народная&nbsp;партия
+          <span class="small">Российской Федерации</span></h1>
+        <p class="lede reveal d3">Мы соединяем гражданские свободы и социальную
+          ответственность государства. Наша фракция отстаивает интересы людей
+          в Государственной Думе — последовательно, открыто и по существу.</p>
+        <div class="cta reveal d4">
+          <a class="btn btn-gold" href="about.html">Наша программа <span class="ar">→</span></a>
+          <a class="btn btn-ghost" href="duma.html">Фракция в Госдуме</a>
+        </div>
+      </div>
+      <div class="emblem reveal d3">
+        <img src="assets/logo.png" alt="Эмблема Либерал-Народной партии Российской Федерации">
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><span class="ln"></span><span class="dia"></span>
+    <span class="chev"></span><span class="dia"></span><span class="ln"></span></div>
+
+  <!-- MOTTO -->
+  <section style="padding:30px 0 50px">
+    <div class="wrap">
+      <p class="motto io">«<b>Свобода</b> личности. <b>Голос</b> народа.
+        <b>Ответственность</b> власти.»</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="padding:20px 0 70px">
+    <div class="wrap">
+      <div class="stats io">
+        <div class="stat"><div class="v"><span data-count="10">0</span></div>
+          <div class="l">депутатов в Госдуме</div></div>
+        <div class="stat"><div class="v"><span data-count="450">0</span></div>
+          <div class="l">всего мест в Думе</div></div>
+        <div class="stat"><div class="v"><span data-count="2.2" data-dec="1">0</span><small>%</small></div>
+          <div class="l">мандатов VIII созыва</div></div>
+        <div class="stat"><div class="v"><span data-count="75">0</span></div>
+          <div class="l">региональных отделений</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section style="padding-top:30px">
+    <div class="wrap two">
+      <div class="io">
+        <div class="kicker">Кто мы</div>
+        <h2 class="h2">Малая фракция<br>с принципиальной&nbsp;позицией</h2>
+        <p class="lede" style="margin-top:22px">Либерал-Народная партия —
+          непарламентское большинство, но устойчивый голос здравого смысла.
+          Имея 10 мандатов из 450, мы концентрируемся на инициативах,
+          напрямую затрагивающих повседневную жизнь граждан: занятость,
+          доступность услуг, защита прав и честная экономика.</p>
+        <p class="muted" style="margin-top:16px">За годы работы фракция внесла
+          ряд социальных законопроектов. Большинство из них не получило
+          поддержки парламентского большинства — но мы продолжаем выносить
+          важные вопросы на обсуждение страны.</p>
+        <a class="btn btn-ghost" style="margin-top:26px" href="laws.html">
+          Наши законопроекты <span class="ar">→</span></a>
+      </div>
+      <ul class="principles io">
+        <li><span class="ic">I</span><div><h4>Свобода и право</h4>
+          <p>Защита гражданских свобод, частной собственности и равенства перед законом.</p></div></li>
+        <li><span class="ic">II</span><div><h4>Социальная справедливость</h4>
+          <p>Доступная медицина, образование и достойный уровень жизни для всех регионов.</p></div></li>
+        <li><span class="ic">III</span><div><h4>Открытость власти</h4>
+          <p>Прозрачные решения, подотчётность депутатов и честный диалог с обществом.</p></div></li>
+        <li><span class="ic">IV</span><div><h4>Сильные регионы</h4>
+          <p>Перераспределение полномочий и ресурсов в пользу субъектов Федерации.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION PREVIEWS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head center io">
+        <div class="kicker">Разделы</div>
+        <h2 class="h2">Чем живёт партия</h2>
+      </div>
+      <div class="rule"><span class="ln"></span><span class="dia"></span>
+        <span class="chev"></span><span class="dia"></span><span class="ln"></span></div>
+      <div class="grid g3" style="margin-top:14px">
+        <a class="card link io" href="duma.html">
+          <div class="num-tag">10 / 450</div>
+          <h3>Фракция в Госдуме</h3>
+          <p>Десять депутатов VIII созыва, их комитеты и распределение мест в палате.</p>
+        </a>
+        <a class="card link io" href="laws.html">
+          <div class="num-tag">8</div>
+          <h3>Законотворчество</h3>
+          <p>Внесённые на голосование законопроекты и их судьба в парламенте.</p>
+        </a>
+        <a class="card link io" href="regions.html">
+          <div class="num-tag">75</div>
+          <h3>Региональное присутствие</h3>
+          <p>Интерактивная карта субъектов РФ, где работают отделения партии.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding-top:10px">
+    <div class="wrap">
+      <div class="ctastrip io">
+        <div>
+          <h2 class="h2" style="font-size:clamp(24px,3vw,34px)">Поддержите наш курс</h2>
+          <p class="muted" style="margin-top:8px">Станьте сторонником партии и
+            получайте новости о работе фракции.</p>
+        </div>
+        <a class="btn btn-gold" href="contacts.html">Стать сторонником <span class="ar">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-foot"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
